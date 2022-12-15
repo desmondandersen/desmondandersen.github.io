@@ -1,19 +1,47 @@
+$breakpoints: (
+  "small": (
+    max-width: 767px,
+  ),
+  "medium": (
+    max-width: 992px,
+  ),
+  "large": (
+    max-width: 1200px,
+  ),
+);
+
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
 body {
   margin: 0;
 }
 
 .homepage {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+  padding: 40px 40px 100px 40px;
 
   font-family: Rubik, Helvetica, sans-serif;
-  overflow: hidden;
+  overflow: scroll;
 
   .column-left {
+    margin: 0 auto;
+    margin-bottom: 80px;
     padding: 16px;
     height: 100%;
-    width: 30%;
+    width: 400px;
     background-color: #fff;
   }
 
@@ -21,10 +49,12 @@ body {
     flex: 1;
     height: 100%;
     overflow: scroll;
-    padding: 32px;
   }
 
   .profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     img {
       width: 80%;
     }
@@ -66,7 +96,6 @@ body {
   }
 
   .resume {
-    margin-top: 20px;
     width: fit-content;
     font-size: 20px;
     a {
@@ -83,6 +112,73 @@ body {
         width: 20px;
         height: 20px;
       }
+    }
+  }
+
+  .hint {
+    padding: 32px;
+    text-align: center;
+
+    span {
+      margin: 0 8px;
+    }
+  }
+
+  .gallery {
+    width: fit-content;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    &__col {
+      width: 300px;
+
+      h3 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 24px;
+      }
+      ul {
+        padding: 0 16px;
+      }
+    }
+
+    &__image {
+      margin-top: 16px;
+      width: 100%;
+
+      p {
+        color: #888;
+        font-size: 16px;
+      }
+
+      &--front {
+        display: block;
+      }
+      &--back {
+        display: none;
+      }
+
+      &:hover {
+        .gallery__image--front {
+          display: none;
+        }
+        .gallery__image--back {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .appendix {
+    width: 60%;
+    margin: 160px auto 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+    a {
+      color: #000;
     }
   }
 }

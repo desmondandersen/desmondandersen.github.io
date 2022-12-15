@@ -3,23 +3,27 @@ body {
 }
 
 .homepage {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+  padding: 40px 40px 100px 40px;
   font-family: Rubik, Helvetica, sans-serif;
-  overflow: hidden;
+  overflow: scroll;
 }
 .homepage .column-left {
+  margin: 0 auto;
+  margin-bottom: 80px;
   padding: 16px;
   height: 100%;
-  width: 30%;
+  width: 400px;
   background-color: #fff;
 }
 .homepage .column-right {
   flex: 1;
   height: 100%;
   overflow: scroll;
-  padding: 32px;
+}
+.homepage .profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .homepage .profile img {
   width: 80%;
@@ -57,7 +61,6 @@ body {
   text-decoration: underline;
 }
 .homepage .resume {
-  margin-top: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -76,4 +79,60 @@ body {
 .homepage .resume a svg {
   width: 20px;
   height: 20px;
+}
+.homepage .hint {
+  padding: 32px;
+  text-align: center;
+}
+.homepage .hint span {
+  margin: 0 8px;
+}
+.homepage .gallery {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.homepage .gallery__col {
+  width: 300px;
+}
+.homepage .gallery__col h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+.homepage .gallery__col ul {
+  padding: 0 16px;
+}
+.homepage .gallery__image {
+  margin-top: 16px;
+  width: 100%;
+}
+.homepage .gallery__image p {
+  color: #888;
+  font-size: 16px;
+}
+.homepage .gallery__image--front {
+  display: block;
+}
+.homepage .gallery__image--back {
+  display: none;
+}
+.homepage .gallery__image:hover .gallery__image--front {
+  display: none;
+}
+.homepage .gallery__image:hover .gallery__image--back {
+  display: block;
+}
+.homepage .appendix {
+  width: 60%;
+  margin: 160px auto 0 auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+.homepage .appendix a {
+  color: #000;
 }/*# sourceMappingURL=index.css.map */
