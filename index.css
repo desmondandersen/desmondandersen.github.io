@@ -111,7 +111,8 @@ body {
   margin-top: 16px;
   width: 100%;
 }
-.homepage .gallery__image p {
+.homepage .gallery__image p,
+.homepage .gallery__image a {
   color: #888;
   font-size: 16px;
 }
