@@ -30,17 +30,18 @@ body {
   margin: 0;
 }
 
-// .header {
-//   background-color: #3d4b52;
-//   padding: 16px 40px;
+.header {
+  background-color: #3d4b52;
+  padding: 12px 40px;
 
-//   .title {
-//     color: whitesmoke;
-//     font-family: Rubik, Helvetica, sans-serif;
-//   }
-// }
+  .title {
+    font-size: 32px;
+    color: whitesmoke;
+    font-family: Rubik, Helvetica, sans-serif;
+  }
+}
 .portfolio {
-  padding: 40px 40px 100px 40px;
+  padding: 20px 40px 100px 40px;
 
   font-family: Rubik, Helvetica, sans-serif;
   overflow: scroll;
@@ -61,7 +62,6 @@ body {
     }
     a {
       color: #163f54;
-      text-decoration: none;
       text-decoration: underline;
     }
   }
@@ -76,18 +76,16 @@ body {
 
     a {
       color: #163f54;
-      text-decoration: none;
-      &:hover,
-      &:focus-visible {
-        text-decoration: underline;
-      }
+      text-decoration: underline;
     }
   }
 }
 
 .horizontal-nav {
+  margin-bottom: 32px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 
   .nav-item {
@@ -131,6 +129,15 @@ body {
   }
 }
 
+.hero-wrapper {
+  padding: 16px 0;
+
+  img {
+    max-height: 300px;
+    align-self: center;
+  }
+}
+
 .image-wrapper {
   display: flex;
   gap: 16px;
@@ -146,6 +153,10 @@ body {
   margin: 24px 0;
   display: flex;
   gap: 16px;
+
+  img {
+    align-self: center;
+  }
 
   &__left {
     width: 60%;

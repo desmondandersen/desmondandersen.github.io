@@ -2,8 +2,18 @@ body {
   margin: 0;
 }
 
+.header {
+  background-color: #3d4b52;
+  padding: 12px 40px;
+}
+.header .title {
+  font-size: 32px;
+  color: whitesmoke;
+  font-family: Rubik, Helvetica, sans-serif;
+}
+
 .portfolio {
-  padding: 40px 40px 100px 40px;
+  padding: 20px 40px 100px 40px;
   font-family: Rubik, Helvetica, sans-serif;
   overflow: scroll;
 }
@@ -23,7 +33,6 @@ body {
 }
 .portfolio p a {
   color: #163f54;
-  text-decoration: none;
   text-decoration: underline;
 }
 .portfolio h2 {
@@ -37,15 +46,14 @@ body {
 }
 .portfolio h3 a {
   color: #163f54;
-  text-decoration: none;
-}
-.portfolio h3 a:hover, .portfolio h3 a:focus-visible {
   text-decoration: underline;
 }
 
 .horizontal-nav {
+  margin-bottom: 32px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
 .horizontal-nav .nav-item {
@@ -87,6 +95,14 @@ body {
   height: 20px;
 }
 
+.hero-wrapper {
+  padding: 16px 0;
+}
+.hero-wrapper img {
+  max-height: 300px;
+  align-self: center;
+}
+
 .image-wrapper {
   display: flex;
   gap: 16px;
@@ -101,6 +117,9 @@ body {
   margin: 24px 0;
   display: flex;
   gap: 16px;
+}
+.image-text img {
+  align-self: center;
 }
 .image-text__left {
   width: 60%;
