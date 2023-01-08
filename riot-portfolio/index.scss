@@ -46,6 +46,13 @@ body {
   font-family: Rubik, Helvetica, sans-serif;
   overflow: scroll;
 
+  .title {
+    padding: 16px 0;
+    font-size: 32px;
+    color: #000;
+    font-family: Rubik, Helvetica, sans-serif;
+  }
+
   p {
     font-size: 18px;
     line-height: 24px;
@@ -60,10 +67,6 @@ body {
     &.bold {
       font-weight: 600;
     }
-    a {
-      color: #163f54;
-      text-decoration: underline;
-    }
   }
   h2 {
     margin: 32px 0 0 0;
@@ -73,11 +76,11 @@ body {
     margin: 0 0 16px 0;
     color: #555;
     font-weight: 400;
+  }
 
-    a {
-      color: #163f54;
-      text-decoration: underline;
-    }
+  a {
+    color: #163f54;
+    text-decoration: underline;
   }
 }
 
@@ -107,24 +110,24 @@ body {
       text-decoration: underline;
     }
   }
+}
 
-  .resume {
-    width: fit-content;
-    font-size: 20px;
-    a {
-      padding: 4px 16px;
-      background-color: #111;
-      border-radius: 4px;
-      color: #fff;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+.resume {
+  width: fit-content;
+  font-size: 20px;
+  a {
+    padding: 4px 16px;
+    background-color: #111;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
-      svg {
-        width: 20px;
-        height: 20px;
-      }
+    svg {
+      width: 20px;
+      height: 20px;
     }
   }
 }

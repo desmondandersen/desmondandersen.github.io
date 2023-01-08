@@ -17,6 +17,12 @@ body {
   font-family: Rubik, Helvetica, sans-serif;
   overflow: scroll;
 }
+.portfolio .title {
+  padding: 16px 0;
+  font-size: 32px;
+  color: #000;
+  font-family: Rubik, Helvetica, sans-serif;
+}
 .portfolio p {
   font-size: 18px;
   line-height: 24px;
@@ -31,10 +37,6 @@ body {
 .portfolio p.bold {
   font-weight: 600;
 }
-.portfolio p a {
-  color: #163f54;
-  text-decoration: underline;
-}
 .portfolio h2 {
   margin: 32px 0 0 0;
   padding: 8px 0;
@@ -44,7 +46,7 @@ body {
   color: #555;
   font-weight: 400;
 }
-.portfolio h3 a {
+.portfolio a {
   color: #163f54;
   text-decoration: underline;
 }
@@ -74,13 +76,14 @@ body {
 .horizontal-nav .nav-item--link:hover a {
   text-decoration: underline;
 }
-.horizontal-nav .resume {
+
+.resume {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
 }
-.horizontal-nav .resume a {
+.resume a {
   padding: 4px 16px;
   background-color: #111;
   border-radius: 4px;
@@ -90,7 +93,7 @@ body {
   align-items: center;
   gap: 8px;
 }
-.horizontal-nav .resume a svg {
+.resume a svg {
   width: 20px;
   height: 20px;
 }

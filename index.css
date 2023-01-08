@@ -96,6 +96,10 @@ body {
   flex-wrap: wrap;
   gap: 32px;
 }
+.homepage .gallery a {
+  color: #163f54;
+  text-decoration: underline;
+}
 .homepage .gallery__col {
   width: 300px;
 }

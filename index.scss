@@ -132,6 +132,11 @@ body {
     flex-wrap: wrap;
     gap: 32px;
 
+    a {
+      color: #163f54;
+      text-decoration: underline;
+    }
+
     &__col {
       width: 300px;
 
