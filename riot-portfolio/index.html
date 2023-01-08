@@ -69,9 +69,13 @@
       </div>
 
       <p class="subtitle">
-        Hello! I'm a 4th year Computer Science student.<br />I enjoy
-        programming, art, and animation, and am seeking industry experience in
-        technical art as an intersection of the three.
+        Hello! I'm a 4th year student at UCLA studying computer science. My
+        academic background has tempered my programming-skills and problem
+        solving abilities, whereas my work experience in front-end development
+        has trained me to work with a team and how to be resourceful in finding
+        solutions to obstacles in my workflow. I am also passionate about
+        creating art and animation, and I love learning new skills that let me
+        express myself creatively.
       </p>
 
       <div class="hero-wrapper">
@@ -86,21 +90,15 @@
       <h1>My Work</h1>
 
       <h2>Quick Studio Lighting Tool</h2>
-      <h3>
-        Python script to create a 3-point lighting set-up for rendering (<a
-          href="https://github.com/desmondandersen/quick-studio-lighting"
-          target="_blank"
-          rel="noreferrer"
-          >see code on Github</a
-        >)
-      </h3>
+      <h3>Python script to create a 3-point lighting set-up for rendering</h3>
 
       <div class="image-text">
-        <img
-          src="/static/images/widget-demo-1.png"
-          alt="Screenshot of Maya"
-          class="image-text__left"
-        />
+        <div class="image-text__left">
+          <img
+            src="/static/images/widget-demo-1.png"
+            alt="Screenshot of Maya"
+          />
+        </div>
         <div class="image-text__right">
           <p>
             I wrote this python script because I wanted a hassle-free way to
@@ -112,29 +110,40 @@
             objects in the Maya scene, along with PySide2 to create the dockable
             UI.
           </p>
-          <p>
-            <a
-              href="https://youtu.be/r7zu73SNTWY"
-              target="_blank"
-              rel="noreferrer"
-              >See a video demo here</a
-            >
-          </p>
-          <p class="bold">Features</p>
-          <ul>
-            <li>
-              Add a studio-style curved backdrop polyPlane with adjustable
-              color.
-            </li>
-            <li>Add a camera with adjustable focal-length.</li>
-            <li>
-              Add key, fill, and back lights with adjustable intensity and
-              color. The visibility of each light can also be toggled on and
-              off.
-            </li>
-          </ul>
+          <div class="external-links-wrapper">
+            <span>
+              <i class="fa fa-brands fa-youtube"></i>
+              <a
+                href="https://youtu.be/r7zu73SNTWY"
+                target="_blank"
+                rel="noreferrer"
+                >See a video demo</a
+              >
+            </span>
+            <span>
+              <i class="fa fa-brands fa-github"></i>
+              <a
+                href="https://github.com/desmondandersen/quick-studio-lighting"
+                target="_blank"
+                rel="noreferrer"
+                >Download code on Github
+              </a>
+            </span>
+          </div>
         </div>
       </div>
+
+      <p class="bold">Features</p>
+      <ul>
+        <li>
+          Add a studio-style curved backdrop polyPlane with adjustable color.
+        </li>
+        <li>Add a camera with adjustable focal-length.</li>
+        <li>
+          Add key, fill, and back lights with adjustable intensity and color.
+          The visibility of each light can also be toggled on and off.
+        </li>
+      </ul>
 
       <div class="image-wrapper">
         <img
@@ -154,54 +163,82 @@
 
       <hr />
 
-      <h2>The Cybernetic Ronin</h2>
-      <h3>Character Modeling & Texture Painting</h3>
-      <div class="image-wrapper">
-        <img
-          src="/static/images/ronin-render.png"
-          alt="Textured render of ronin"
-        />
-        <img
-          src="/static/images/ronin-clay.png"
-          alt="Wireframe clay render of ronin"
-        />
+      <h2>Character Modeling & Texture Painting</h2>
+      <div class="section">
+        <h3>The Cybernetic Ronin</h3>
+        <div class="image-wrapper">
+          <img
+            src="/static/images/ronin-render.png"
+            alt="Textured render of ronin"
+          />
+          <img
+            src="/static/images/ronin-clay.png"
+            alt="Wireframe clay render of ronin"
+          />
+        </div>
+        <p class="caption">
+          Renders of textured and clay wireframe character models.
+        </p>
+        <p>
+          Last Spring, I joined a student-led game development project as the
+          character modeler. We completed a
+          <a
+            href="https://aaisara12.itch.io/ronin"
+            target="_blank"
+            rel="noreferrer"
+            >working isometric game level</a
+          >
+          within a 6-month time constraint. My role included modeling and
+          texturing the player character in Blender, from my teammate's concept
+          illustrations. I also modeled a mini-boss samurai.
+        </p>
+        <p class="bold">Process:</p>
+        <ul>
+          <li>
+            Started by modeling a human base-mesh with game-ready topology
+            (quads only!). This seemed like a simpler workflow than sculpting
+            and retopologizing.
+          </li>
+          <li>
+            Added the character details (eg. cloak, mechanical arm and leg) by
+            modifying the base mesh and modeling additional meshes.
+          </li>
+          <li>
+            UV-unwrapped all the meshes to minimize visible seams and stretching
+            in the texture.
+          </li>
+          <li>
+            Texture-painted the character within Blender. (This probably took
+            longer than it should have because I was using a mouse)
+          </li>
+        </ul>
       </div>
-      <p class="caption">
-        Renders of textured and clay wireframe character models.
-      </p>
-      <p>
-        Last Spring, I joined a student-led game development project as the
-        character modeler. We completed a
-        <a
-          href="https://aaisara12.itch.io/ronin"
-          target="_blank"
-          rel="noreferrer"
-          >working isometric game level</a
-        >
-        within a 6-month time constraint. My role included modeling and
-        texturing the player character in Blender, from my teammate's concept
-        illustrations. I also modeled a mini-boss samurai.
-      </p>
-      <p class="bold">Process:</p>
-      <ul>
-        <li>
-          Started by modeling a human base-mesh with game-ready topology (quads
-          only!). This seemed like a simpler workflow than sculpting and
-          retopologizing.
-        </li>
-        <li>
-          Added the character details (eg. cloak, mechanical arm and leg) by
-          modifying the base mesh and modeling additional meshes.
-        </li>
-        <li>
-          UV-unwrapped all the meshes to minimize visible seams and stretching
-          in the texture.
-        </li>
-        <li>
-          Texture-painted the character within Blender. (This probably took
-          longer than it should have because I was using a mouse)
-        </li>
-      </ul>
+
+      <div class="section">
+        <h3>Sculpting and Retopologizing a Face</h3>
+        <p>
+          Since my ronin model is wearing a mask, I also feel obligated to show
+          some examples of my work sculpting and retopologizing a head in
+          Blender.
+        </p>
+
+        <div class="image-wrapper">
+          <img
+            src="/static/images/retopo-1.jpg"
+            alt="In progress retopology of a head."
+          />
+          <img src="/static/images/retopo-2.jpg" alt="Render of a head." />
+
+          <img
+            src="/static/images/angler.jpg"
+            alt="Render of a head with a light coming out of it."
+          />
+        </div>
+        <p class="caption">
+          The last one is just for fun, but it uses a cool sub-surface
+          scattering material.
+        </p>
+      </div>
 
       <a href="/">Return to homepage</a>
     </div>

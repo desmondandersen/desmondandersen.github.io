@@ -27,7 +27,8 @@ $breakpoints: (
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .header {
@@ -53,15 +54,22 @@ body {
     font-family: Rubik, Helvetica, sans-serif;
   }
 
-  p {
+  .section {
+    padding-bottom: 32px;
+  }
+
+  p,
+  ul {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    width: 80%;
 
     &.subtitle {
       color: #444;
     }
     &.caption {
+      padding-bottom: 16px;
       color: #888;
     }
     &.bold {
@@ -69,11 +77,13 @@ body {
     }
   }
   h2 {
+    font-size: 24px;
     margin: 32px 0 0 0;
     padding: 8px 0;
   }
   h3 {
-    margin: 0 0 16px 0;
+    font-size: 24px;
+    margin: 16px 0;
     color: #555;
     font-weight: 400;
   }
@@ -141,13 +151,29 @@ body {
   }
 }
 
+.external-links-wrapper {
+  padding: 16px 0;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+
+  a {
+    padding-left: 8px;
+    color: #163f54;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+}
+
 .image-wrapper {
+  padding-top: 16px;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 
   img {
-    max-height: 400px;
+    max-height: 300px;
     align-self: center;
   }
 }
@@ -155,9 +181,11 @@ body {
 .image-text {
   margin: 24px 0;
   display: flex;
+  align-items: flex-start;
   gap: 16px;
 
   img {
+    width: 100%;
     align-self: center;
   }
 
