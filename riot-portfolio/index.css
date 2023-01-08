@@ -4,13 +4,26 @@ body {
 }
 
 .header {
-  background-color: #3d4b52;
   padding: 12px 40px;
+  display: flex;
+  border-bottom: 2px solid #888;
 }
 .header .title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 32px;
-  color: whitesmoke;
+  color: #444;
   font-family: Rubik, Helvetica, sans-serif;
+}
+.header .title--main {
+  color: #000;
+  font-size: 48px;
+  font-weight: 500;
+}
+.header img {
+  height: 150px;
+  align-self: center;
 }
 
 .portfolio {
