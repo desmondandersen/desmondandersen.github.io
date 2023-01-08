@@ -1,0 +1,167 @@
+$breakpoints: (
+  "small": (
+    max-width: 767px,
+  ),
+  "medium": (
+    max-width: 992px,
+  ),
+  "large": (
+    max-width: 1200px,
+  ),
+);
+
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #3d4b52;
+  padding: 12px 40px;
+
+  .title {
+    font-size: 32px;
+    color: whitesmoke;
+    font-family: Rubik, Helvetica, sans-serif;
+  }
+}
+.portfolio {
+  padding: 20px 40px 100px 40px;
+
+  font-family: Rubik, Helvetica, sans-serif;
+  overflow: scroll;
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+
+    &.subtitle {
+      color: #444;
+    }
+    &.caption {
+      color: #888;
+    }
+    &.bold {
+      font-weight: 600;
+    }
+    a {
+      color: #163f54;
+      text-decoration: underline;
+    }
+  }
+  h2 {
+    margin: 32px 0 0 0;
+    padding: 8px 0;
+  }
+  h3 {
+    margin: 0 0 16px 0;
+    color: #555;
+    font-weight: 400;
+
+    a {
+      color: #163f54;
+      text-decoration: underline;
+    }
+  }
+}
+
+.horizontal-nav {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  .nav-item {
+    font-size: 18px;
+    color: #000;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    a {
+      font-size: 18px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    &--link:hover a {
+      text-decoration: underline;
+    }
+  }
+
+  .resume {
+    width: fit-content;
+    font-size: 20px;
+    a {
+      padding: 4px 16px;
+      background-color: #111;
+      border-radius: 4px;
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.hero-wrapper {
+  padding: 16px 0;
+
+  img {
+    max-height: 300px;
+    align-self: center;
+  }
+}
+
+.image-wrapper {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  img {
+    max-height: 400px;
+    align-self: center;
+  }
+}
+
+.image-text {
+  margin: 24px 0;
+  display: flex;
+  gap: 16px;
+
+  img {
+    align-self: center;
+  }
+
+  &__left {
+    width: 60%;
+  }
+  &__right {
+    width: 40%;
+  }
+}
