@@ -21,6 +21,9 @@ body {
   font-size: 48px;
   font-weight: 500;
 }
+.header .title--sub {
+  font-size: 32px;
+}
 .header img {
   height: 150px;
   align-self: center;
@@ -61,7 +64,7 @@ body {
   font-weight: 600;
 }
 .portfolio h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 32px 0 0 0;
   padding: 8px 0;
 }

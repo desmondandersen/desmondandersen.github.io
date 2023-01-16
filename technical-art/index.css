@@ -4,13 +4,29 @@ body {
 }
 
 .header {
-  background-color: #3d4b52;
-  padding: 12px 40px;
+  padding: 24px 40px 12px 40px;
+  display: flex;
 }
 .header .title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 32px;
-  color: whitesmoke;
+  color: #444;
   font-family: Rubik, Helvetica, sans-serif;
+}
+.header .title--main {
+  padding-bottom: 12px;
+  color: #000;
+  font-size: 48px;
+  font-weight: 500;
+}
+.header .title--sub {
+  font-size: 32px;
+}
+.header img {
+  height: 150px;
+  align-self: center;
 }
 
 .portfolio {
@@ -48,7 +64,7 @@ body {
   font-weight: 600;
 }
 .portfolio h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 32px 0 0 0;
   padding: 8px 0;
 }
