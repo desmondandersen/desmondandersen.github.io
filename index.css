@@ -24,14 +24,18 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 16px;
 }
 .homepage .profile img {
-  width: 80%;
+  border-radius: 50%;
+  width: 50%;
 }
 .homepage .title {
+  text-align: center;
   font-size: 40px;
 }
 .homepage .subtitle {
+  text-align: center;
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
@@ -45,7 +49,6 @@ body {
 .homepage .nav-item {
   font-size: 18px;
   color: #000;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -61,7 +64,6 @@ body {
   text-decoration: underline;
 }
 .homepage .resume {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
@@ -88,7 +90,6 @@ body {
   margin: 0 8px;
 }
 .homepage .gallery {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;

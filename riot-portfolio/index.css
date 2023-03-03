@@ -9,7 +9,6 @@ body {
   border-bottom: 2px solid #888;
 }
 .header .title {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 32px;
@@ -89,7 +88,6 @@ body {
 .horizontal-nav .nav-item {
   font-size: 18px;
   color: #000;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -106,7 +104,6 @@ body {
 }
 
 .resume {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
