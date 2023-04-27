@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <div className='resume'>
-          <a download={`AndersenResume`} href={`/resume.pdf`}>
+          <a download={`DesmondAndersen_Resume`} href={`/resume.pdf`}>
             My Resume
             <FontAwesomeIcon icon={faArrowDown} />
           </a>
