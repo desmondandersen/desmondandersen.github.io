@@ -40,6 +40,7 @@ body {
   width: 100%;
 }
 .homepage .title {
+  font-family: Ubuntu;
   text-align: left;
   font-size: 40px;
   color: hsl(228, 32%, 25%);
@@ -51,6 +52,7 @@ body {
   line-height: 28px;
 }
 .homepage .nav {
+  margin-top: auto;
   padding: 32px 0;
   display: flex;
   flex-direction: column;
@@ -74,7 +76,6 @@ body {
   text-decoration: underline;
 }
 .homepage .buttons {
-  margin-top: auto;
   display: flex;
   justify-content: space-between;
 }

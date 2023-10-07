@@ -78,6 +78,7 @@ body {
   }
 
   .title {
+    font-family: Ubuntu;
     text-align: left;
     font-size: 40px;
     color: $btn-hover-color;
@@ -90,6 +91,7 @@ body {
   }
 
   .nav {
+    margin-top: auto;
     padding: 32px 0;
     display: flex;
     flex-direction: column;
@@ -116,7 +118,6 @@ body {
   }
 
   .buttons {
-    margin-top: auto;
     display: flex;
     justify-content: space-between;
   }
