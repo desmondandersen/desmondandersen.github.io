@@ -3,52 +3,62 @@ body {
 }
 
 .homepage {
-  padding: 40px 40px 100px 40px;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
   font-family: Rubik, Helvetica, sans-serif;
-  overflow: scroll;
+  display: flex;
 }
 .homepage .column-left {
+  height: calc(100% - 64px);
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 380px;
+  top: 0;
   margin: 0 auto;
   margin-bottom: 80px;
-  padding: 16px;
-  height: 100%;
-  width: 400px;
+  padding: 32px;
   background-color: #fff;
+  background-image: url("./static/grain.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .homepage .column-right {
+  padding: 40px 40px 100px 40px;
   flex: 1;
-  height: 100%;
+  height: calc(100% - 140px);
   overflow: scroll;
 }
 .homepage .profile {
   width: 100%;
-  display: flex;
-  justify-content: center;
   padding-bottom: 16px;
 }
 .homepage .profile img {
-  border-radius: 50%;
-  width: 50%;
+  border-radius: 32px;
+  width: 100%;
 }
 .homepage .title {
-  text-align: center;
+  text-align: left;
   font-size: 40px;
+  color: hsl(228, 32%, 25%);
 }
 .homepage .subtitle {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
 }
 .homepage .nav {
-  padding: 24px 0;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 .homepage .nav-item {
   font-size: 18px;
-  color: #000;
+  color: #18020C;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -57,30 +67,49 @@ body {
 }
 .homepage .nav-item a {
   font-size: 18px;
-  color: #000;
+  color: #18020C;
   text-decoration: none;
 }
 .homepage .nav-item--link:hover a {
   text-decoration: underline;
 }
-.homepage .resume {
+.homepage .buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.homepage .resume, .homepage .portfolio {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
 }
-.homepage .resume a {
+.homepage .resume a, .homepage .portfolio a {
   padding: 4px 16px;
-  background-color: #111;
-  border-radius: 4px;
+  background-color: hsl(228, 32%, 35%);
+  border: 2px solid hsl(228, 32%, 35%);
+  border-radius: 8px;
   color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.homepage .resume a svg {
+.homepage .resume a svg, .homepage .portfolio a svg {
   width: 20px;
   height: 20px;
+}
+.homepage .resume a:hover, .homepage .portfolio a:hover {
+  background-color: hsl(228, 32%, 25%);
+  border-color: hsl(228, 32%, 25%);
+}
+.homepage .portfolio a {
+  color: hsl(228, 32%, 35%);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.homepage .portfolio a:hover {
+  color: hsl(228, 32%, 25%);
+  background-color: transparent;
 }
 .homepage .hint {
   padding: 32px;
@@ -90,22 +119,22 @@ body {
   margin: 0 8px;
 }
 .homepage .gallery {
-  width: -moz-fit-content;
-  width: fit-content;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 28px;
 }
 .homepage .gallery a {
   color: #163f54;
   text-decoration: underline;
 }
 .homepage .gallery__col {
-  width: 300px;
+  width: 280px;
 }
 .homepage .gallery__col h3 {
-  text-align: center;
+  margin: 32px 0 16px 0;
+  text-align: left;
   font-weight: 500;
   font-size: 24px;
 }
@@ -120,6 +149,9 @@ body {
 .homepage .gallery__image a {
   color: #888;
   font-size: 16px;
+}
+.homepage .gallery__image img {
+  border-radius: 16px;
 }
 .homepage .gallery__image--front {
   display: block;
@@ -140,5 +172,5 @@ body {
   line-height: 24px;
 }
 .homepage .appendix a {
-  color: #000;
+  color: #18020C;
 }/*# sourceMappingURL=index.css.map */

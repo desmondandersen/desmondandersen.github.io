@@ -10,6 +10,9 @@ $breakpoints: (
   ),
 );
 
+$btn-color: hsl(228, 32%, 35%);
+$btn-hover-color: hsl(228, 32%, 25%);
+
 @mixin respond-to($name) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $name) {
@@ -31,58 +34,70 @@ body {
 }
 
 .homepage {
-  padding: 40px 40px 100px 40px;
+  position: relative;
 
+  height: 100vh;
+  overflow: hidden;
   font-family: Rubik, Helvetica, sans-serif;
-  overflow: scroll;
+  display: flex;
 
   .column-left {
+    height: calc(100% - 64px);
+    width: fit-content;
+    max-width: 380px;
+    top: 0;
     margin: 0 auto;
     margin-bottom: 80px;
-    padding: 16px;
-    height: 100%;
-    width: 400px;
+    padding: 32px;
     background-color: #fff;
+    background-image: url( './static/grain.svg' );
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .column-right {
+    padding: 40px 40px 100px 40px;
     flex: 1;
-    height: 100%;
+    height: calc(100% - 140px);
     overflow: scroll;
   }
 
   .profile {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: left;
     padding-bottom: 16px;
 
     img {
-      border-radius: 50%;
-      width: 50%;
+      border-radius: 32px;
+      width: 100%;
     }
   }
 
   .title {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
+    color: $btn-hover-color;
   }
   .subtitle {
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     font-weight: 300;
     line-height: 28px;
   }
 
   .nav {
-    padding: 24px 0;
+    padding: 32px 0;
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
   .nav-item {
     font-size: 18px;
-    color: #000;
+    color: #18020C;
     width: fit-content;
 
     display: flex;
@@ -91,7 +106,7 @@ body {
 
     a {
       font-size: 18px;
-      color: #000;
+      color: #18020C;
       text-decoration: none;
     }
 
@@ -100,13 +115,19 @@ body {
     }
   }
 
-  .resume {
+  .buttons {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .resume, .portfolio {
     width: fit-content;
     font-size: 20px;
     a {
       padding: 4px 16px;
-      background-color: #111;
-      border-radius: 4px;
+      background-color: $btn-color;
+      border: 2px solid $btn-color;
+      border-radius: 8px;
       color: #fff;
       text-decoration: none;
       display: flex;
@@ -117,8 +138,25 @@ body {
         width: 20px;
         height: 20px;
       }
+
+      &:hover {
+        background-color: $btn-hover-color;
+        border-color: $btn-hover-color;
+      }
     }
   }
+
+  .portfolio {
+    a {
+    color: $btn-color;
+    border-radius: 8px;
+    background-color: transparent;
+
+    &:hover {
+      color: $btn-hover-color;
+      background-color: transparent;
+    }
+  }}
 
   .hint {
     padding: 32px;
@@ -130,12 +168,11 @@ body {
   }
 
   .gallery {
-    width: fit-content;
     margin: 0 auto;
-
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 28px;
 
     a {
       color: #163f54;
@@ -143,10 +180,11 @@ body {
     }
 
     &__col {
-      width: 300px;
+      width: 280px;
 
       h3 {
-        text-align: center;
+        margin: 32px 0 16px 0;
+        text-align: left;
         font-weight: 500;
         font-size: 24px;
       }
@@ -163,6 +201,10 @@ body {
       a {
         color: #888;
         font-size: 16px;
+      }
+
+      img {
+        border-radius: 16px;
       }
 
       &--front {
@@ -189,7 +231,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     a {
-      color: #000;
+      color: #18020C;
     }
   }
 }

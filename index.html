@@ -1,44 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
-      integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
-    <title>Desmond Andersen</title>
-  </head>
-  <body>
-    <div class="homepage">
-      <div class="column-left">
-        <div class="profile">
-          <img src="/static/images/profile.jpg" alt="Profile picture" />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
+    integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+  <title>Desmond Andersen</title>
+</head>
+
+<body>
+  <div class="homepage">
+    <div class="column-left">
+      <div class="info">
         <div class="title">Desmond Andersen</div>
         <div class="subtitle">
-          Software Engineer | Technical Artist
-          <br />
-          Computer Science, B.S. @ UCLA '24
+          Frontend Engineer<br />CS @ UCLA '24
         </div>
 
         <div class="nav">
@@ -48,116 +36,80 @@
           </div>
           <div class="nav-item nav-item--link">
             <i class="fa fa-brands fa-github"></i>
-            <a
-              href="https://github.com/desmondandersen"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/desmondandersen" target="_blank" rel="noreferrer">
               Github
             </a>
           </div>
           <div class="nav-item nav-item--link">
             <i class="fa fa-brands fa-linkedin"></i>
-            <a
-              href="https://www.linkedin.com/in/desmondandersen/"
-              target="_blank"
-              rel="noreferrer"
-              class="nav-item nav-item--link"
-            >
+            <a href="https://www.linkedin.com/in/desmondandersen/" target="_blank" rel="noreferrer"
+              class="nav-item nav-item--link">
               LinkedIn
             </a>
           </div>
         </div>
-
-        <div class="resume">
-          <a download="DesmondAndersen_Resume" href="/static/desmond-resume.pdf">
-            Download My Resume
-            <!-- <i class="fa fa-file-arrow-down" style="color: white"></i> -->
-          </a>
-        </div>
-
-        <div class="hint">
-          <i class="fa fa-angles-down"></i>
-          <span>See More Below</span>
-        </div>
       </div>
 
-      <!-- GALLERY -->
+      <div class="resume">
+        <a download="DesmondAndersen_Resume" href="/static/DesmondAndersen_Resume.pdf">
+          Download Resume
+          <!-- <i class="fa fa-file-arrow-down" style="color: white"></i> -->
+        </a>
+      </div>
+    </div>
 
+
+    <div class="column-right">
+      <!-- GALLERY -->
       <div class="gallery">
         <div class="gallery__col">
-          <h3>3D-Modeling + Game Dev</h3>
           <div class="gallery__image">
-            <img
-              class="gallery__image gallery__image--front"
-              src="/static/images/lisa-render-1.png"
-              alt="Computer render of an Apple LISA"
-            />
-            <img
-              class="gallery__image gallery__image--back"
-              src="/static/images/lisa-render-2.png"
-              alt="Computer render of an Apple LISA"
-            />
+            <img class="gallery__image gallery__image--front" src="/static/images/lisa-render-1.png"
+              alt="Computer render of an Apple LISA" />
+            <img class="gallery__image gallery__image--back" src="/static/images/lisa-render-2.png"
+              alt="Computer render of an Apple LISA" />
             <p>Apple LISA with hologram. Modeled and rendered in Blender.</p>
           </div>
+
+          <h3>3D-Modeling</h3>
           <ul>
             <li>Blender</li>
             <li>Maya (with Python Scripting)</li>
             <li>Unreal Engine (with Blueprints)</li>
             <li>
-              <a href="/technical-art/">See my technical art portfolio</a>
+              <a href="/technical-art/">Technical art portfolio</a>
             </li>
           </ul>
         </div>
         <div class="gallery__col">
-          <h3>Hardware</h3>
-
           <div class="gallery__image">
-            <img
-              class="gallery__image gallery__image--front"
-              src="/static/images/clock-1.png"
-              alt="Digital clock with pixel-art character"
-            />
-            <img
-              class="gallery__image gallery__image--back"
-              src="/static/images/clock-2.png"
-              alt="Circuit and wires assembled on a perforated circuit-board"
-            />
+            <img class="gallery__image gallery__image--front" src="/static/images/clock-1.png"
+              alt="Digital clock with pixel-art character" />
+            <img class="gallery__image gallery__image--back" src="/static/images/clock-2.png"
+              alt="Circuit and wires assembled on a perforated circuit-board" />
             <p>
-              Animated pixel-display clock I designed and built using
-              Arduino.<br />
-              (<a
-                href="https://www.instructables.com/Space-Invaders-Desktop-Clock/"
-                >See my build log</a
-              >)
+              Animated pixel-display clock designed and built using
+              Arduino.
             </p>
           </div>
-
+          <h3>Hardware</h3>
           <ul>
             <li>Arduino</li>
-            <li>Mill + Lathe Machining</li>
             <li>Basic Circuit Prototyping</li>
           </ul>
         </div>
         <div class="gallery__col">
-          <h3>Art</h3>
           <div class="gallery__image">
-            <img
-              class="gallery__image gallery__image--front"
-              src="/static/images/bargue-1.jpg"
-              alt="Pencil drawing of a bearded man"
-            />
-            <img
-              class="gallery__image gallery__image--back"
-              src="/static/images/bargue-2.jpg"
-              alt="Pencil drawing of a bearded man"
-            />
+            <img class="gallery__image gallery__image--front" src="/static/images/bargue-1.jpg"
+              alt="Pencil drawing of a bearded man" />
+            <img class="gallery__image gallery__image--back" src="/static/images/bargue-2.jpg"
+              alt="Pencil drawing of a bearded man" />
             <p>
-              Pencil drawing I made in an art class using a Bargue plate as
-              reference.
+              Pencil drawing of Bargue plate.
             </p>
           </div>
 
+          <h3>Art</h3>
           <ul>
             <li>Drawing</li>
             <li>Animation</li>
@@ -165,22 +117,9 @@
           </ul>
         </div>
       </div>
-
-      <div class="appendix">
-        <h3>NOTE:</h3>
-        <p>
-          Hi and thank you for checking out my site!<br />I am still actively
-          developing it and hope to better document more of my work in days to
-          come.<br />In the meantime, feel free to peruse the
-          <a
-            href="https://www.instagram.com/sculptyboi/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            some of the art I make for fun.</a
-          >
-        </p>
-      </div>
     </div>
-  </body>
+
+  </div>
+</body>
+
 </html>
