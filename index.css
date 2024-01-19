@@ -1,12 +1,13 @@
 body {
   margin: 0;
+  overflow-x: hidden;
+  font-family: Rubik, Helvetica, sans-serif;
 }
 
 .homepage {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  font-family: Rubik, Helvetica, sans-serif;
   display: flex;
 }
 .homepage .column-left {
@@ -60,7 +61,7 @@ body {
 }
 .homepage .nav-item {
   font-size: 18px;
-  color: #18020C;
+  color: #18020c;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -69,7 +70,7 @@ body {
 }
 .homepage .nav-item a {
   font-size: 18px;
-  color: #18020C;
+  color: #18020c;
   text-decoration: none;
 }
 .homepage .nav-item--link:hover a {
@@ -79,12 +80,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.homepage .resume, .homepage .portfolio {
+.homepage .resume,
+.homepage .portfolio {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
 }
-.homepage .resume a, .homepage .portfolio a {
+.homepage .resume a,
+.homepage .portfolio a {
   padding: 4px 16px;
   background-color: hsl(228, 32%, 35%);
   border: 2px solid hsl(228, 32%, 35%);
@@ -95,11 +98,13 @@ body {
   align-items: center;
   gap: 8px;
 }
-.homepage .resume a svg, .homepage .portfolio a svg {
+.homepage .resume a svg,
+.homepage .portfolio a svg {
   width: 20px;
   height: 20px;
 }
-.homepage .resume a:hover, .homepage .portfolio a:hover {
+.homepage .resume a:hover,
+.homepage .portfolio a:hover {
   background-color: hsl(228, 32%, 25%);
   border-color: hsl(228, 32%, 25%);
 }
@@ -173,5 +178,5 @@ body {
   line-height: 24px;
 }
 .homepage .appendix a {
-  color: #18020C;
+  color: #18020c;
 }/*# sourceMappingURL=index.css.map */

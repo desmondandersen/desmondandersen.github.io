@@ -31,6 +31,8 @@ $btn-hover-color: hsl(228, 32%, 25%);
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  font-family: Rubik, Helvetica, sans-serif;
 }
 
 .homepage {
@@ -38,7 +40,6 @@ body {
 
   height: 100vh;
   overflow: hidden;
-  font-family: Rubik, Helvetica, sans-serif;
   display: flex;
 
   .column-left {
@@ -50,7 +51,7 @@ body {
     margin-bottom: 80px;
     padding: 32px;
     background-color: #fff;
-    background-image: url( './static/grain.svg' );
+    background-image: url("./static/grain.svg");
     background-size: cover;
 
     display: flex;
@@ -99,7 +100,7 @@ body {
   }
   .nav-item {
     font-size: 18px;
-    color: #18020C;
+    color: #18020c;
     width: fit-content;
 
     display: flex;
@@ -108,7 +109,7 @@ body {
 
     a {
       font-size: 18px;
-      color: #18020C;
+      color: #18020c;
       text-decoration: none;
     }
 
@@ -121,7 +122,8 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .resume, .portfolio {
+  .resume,
+  .portfolio {
     width: fit-content;
     font-size: 20px;
     a {
@@ -149,15 +151,16 @@ body {
 
   .portfolio {
     a {
-    color: $btn-color;
-    border-radius: 8px;
-    background-color: transparent;
-
-    &:hover {
-      color: $btn-hover-color;
+      color: $btn-color;
+      border-radius: 8px;
       background-color: transparent;
+
+      &:hover {
+        color: $btn-hover-color;
+        background-color: transparent;
+      }
     }
-  }}
+  }
 
   .hint {
     padding: 32px;
@@ -232,7 +235,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     a {
-      color: #18020C;
+      color: #18020c;
     }
   }
 }
